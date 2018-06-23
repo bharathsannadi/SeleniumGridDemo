@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MulitiBrowser Parallel Testing Suite" parallel="tests" thread-count="5">
+  <test name="chromeTest">
+    <classes>
+      <class name="TestNGGridPackage.SeleniumNodeChrome">
+        <methods>
+          <include name="SeleniumNodeChromeTest"/>
+        </methods>
+      </class> <!-- TestNGGridPackage.SeleniumNodeChrome -->
+    </classes>
+  </test> <!-- TestNgGridDemo -->
+  <test name="firefoxTest">
+    <classes>
+      <class name="TestNGGridPackage.SeleniumNodeFirefox">
+        <methods>
+          <include name="SeleniumNodeFirefoxTest"/>
+        </methods>
+      </class> <!-- TestNGGridPackage.SeleniumNodeFirefox -->
+    </classes>
+  </test> <!-- TestNgGridDemo -->
+</suite> <!-- Default Suite -->
